@@ -1,0 +1,22 @@
+default_context:
+  project_name: 'MilionaireGame'
+  project_slug: 'MilionaireGame'
+  domain_main: 'MilionaireGame.com'
+  domain_staging: 'stag.MilionaireGame.com'
+  docker_swarm_stack_name_main: 'MilionaireGame-com'
+  docker_swarm_stack_name_staging: 'stag-MilionaireGame-com'
+  secret_key: '39cf8db0af1d07fcdedac03e03c51d420e5e5aea6218c58416d3df640d8b9340'
+  backend_cors_origins: '["http://localhost", "http://localhost:4200", "http://localhost:3000", "http://localhost:8080", "https://localhost", "https://localhost:4200", "https://localhost:3000", "https://localhost:8080", ]'
+  smtp_port: '587'
+  smtp_host: ''
+  smtp_user: ''
+  smtp_password: ''
+  smtp_emails_from_email: 'info@noviraplatformmvp.com'
+  postgres_password: 'root1234'
+  pgadmin_default_user: 'root'
+  pgadmin_default_user_password: 'root1234'
+  sentry_dsn: ''
+  docker_image_prefix: ''
+  docker_image_backend: 'backend'
+  _copy_without_render: [frontend/src/**/*.html, frontend/src/**/*.vue, frontend/node_modules/*, backend/app/app/email-templates/**]
+  _template: ./
